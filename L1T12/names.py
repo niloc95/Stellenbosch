@@ -15,5 +15,6 @@ while stu_name != "Stop":
     #this input statement propmts the user to enter more name or stop to finish
     #It also importmant to note that the second input is after the break, becuase i didn't,
     #want to add the "Stop" word to the array.
+    
     stu_name = input("'Stop' to finish or next name: ").capitalize()
 print(f"Here's your list: {names}")
