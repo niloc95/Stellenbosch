@@ -1,5 +1,5 @@
 #SyntaxError parentheses not closed
-user_num = str(input("Enter your number please: ")
+user_num = str(input("Enter your number please: "))
 
 # because I used the not equal to "10" the second condition or else statement will never iterate 
 if num != 10:
