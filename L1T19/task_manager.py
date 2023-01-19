@@ -66,17 +66,17 @@ while True:
         vm - view my task
         e - Exit
      ''').lower()
+    
     else: 
         menu = input('''
-     ==========================================
-    Select one of the following Options below:
-    ==========================================
-        r - Registering a user
-       
-        a - Adding a task
-        va - View all tasks
-        vm - view my task
-        e - Exit
+    ================================================
+        Select one of the following Options below:
+    ================================================
+     r - Registering a user
+     a - Adding a task
+     va - View all tasks
+     vm - view my task
+     e - Exit
      ''').lower()
      
     if menu == 's':
@@ -106,8 +106,8 @@ while True:
             new_password = input('Please enter a new password: ')
             confirm_new_password = input ('Please confirm the password: ')
             if new_password == confirm_new_password:
-                with open('user.txt', 'a+') as user_read_file:
-                    user_read_file.write(f"\n{new_username}, {new_password}")
+                with open('user.txt', 'a+') as users_file:
+                    users_file.write(f"\n{new_username}, {new_password}")
                 print('''
     ===============================================
            New user successfully registered 
@@ -124,7 +124,7 @@ while True:
              Sorry! administrator privileges are required to perform this task
         =========================================================================
         ''')
-        continue
+            continue
 
     elif menu == 'a':
         print(''' 
@@ -132,7 +132,7 @@ while True:
                 Lets add a task
             =======================
         ''')
-        task_username = input('Task for: ')
+        task_username = input('Task for, who must do the task ==>: ')
         while task_username not in username_list:
             print('''
             =================================================
@@ -141,25 +141,25 @@ while True:
             ''')
             task_username = input('Task for: ')
 
-            task_name = input(' Task name: ')
-            task_desc = input(' Task description: ')
-            task_due = input(' Task due date: ')
-            current_date = date.today().strftime("%d %b, %Y")
-            task_completion = "No"
+        task_name = input(' Task name: ')
+        task_desc = input(' Task description: ')
+        task_due = input(' Task due date: ')
+        current_date = date.today().strftime("%d %b, %Y")
+        task_completion = "No"
 
-            if not len(task_username) or not len (task_name) or not len(task_desc) \
+        if not len(task_username) or not len (task_name) or not len(task_desc) \
                     or not len(task_due):
-                    print('''
-                        ======================================================
-                            Please enter all the task items, Lets try again! 
-                        ======================================================
-                    ''')
-            else: 
-                tasks_file = open('tasks.txt', 'a+')
-                tasks_file.write(f'\n{task_username}, {task_name}, {task_desc} '
+            print('''
+        ======================================================
+            Please enter all the task items, Lets try again! 
+        ======================================================
+                ''')
+        else: 
+            tasks_file = open('tasks.txt', 'a+')
+            tasks_file.write(f'\n{task_username}, {task_name}, {task_desc} '
                                  f'{task_due}, {current_date},{task_completion}')
-                tasks_file.close()
-                print('''
+            tasks_file.close()
+            print('''
                 *****************************************************
                             New task successfully added
                 *****************************************************
@@ -171,8 +171,8 @@ while True:
                     Lets view all tasks
         *********************************************
         ''')
-       with open ('tasks.txt', 'r') as task_items:
-            for line in task_items:
+       with open ('tasks.txt', 'r') as tasks_file:
+            for line in tasks_file:
                 line = line.split(', ')
                 assignee = line[0]
                 task = line[1]
@@ -201,11 +201,11 @@ while True:
                     View all tasks
         *********************************************
         ''')
-        with open ('tasks.txt', 'r') as task_items:
-                for line in task_items:
+        with open ('tasks.txt', 'r') as tasks_file:
+                for line in tasks_file:
                     line = line.split(', ')
                     if username == line[0]:
-                        assignee = line[0]
+                        my_tasks = line
                         task = line[1]
                         task_descsription = line[2]
                         date_due = line[3]
@@ -215,13 +215,12 @@ while True:
                     print(f'''
                 -------------------------------------------------------------------------------------------------------------------------------------
                 -                                                                                                                                   
-                -   Task Item:              {task}                                                                                                  
-                -   Task Assignee:          {assignee}                                                                                              
+                -   Task Item:              {task}                                                                                                                                                                                           
                 -   Date Assigned:          {assigned}                                                                                              
                 -   Due Date:               {date_due}                                                                                              
                 -   Task Complete Status:   {complete_task}                                                                                         
                 -   Task Description:       {task_descsription}
-                -
+                - 
                 -------------------------------------------------------------------------------------------------------------------------------------''')
                 else: 
                     print('''
@@ -231,7 +230,7 @@ while True:
             ''')        
 
     elif menu == 'e':
-        print('Goodbye!!!')
+        print('Goodbye!!!😀')
         exit()
 
     else:
