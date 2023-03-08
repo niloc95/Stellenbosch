@@ -1,46 +1,50 @@
+#printing a welcome note 
+print("\nWelcome to my interpretation of SEL1T28 Compulsory Task1  'email.py' \n")
 class Email:
+    # constructor to initialise variables
     def __init__(self, from_address, email_contents):
         self.from_address = from_address
         self.email_contents = email_contents
         self.has_been_read = False
         self.is_spam = False
-    
+    # method to mark email as read
     def mark_as_read(self):
         self.has_been_read = True
-    
+     # method to mark email as spam
     def mark_as_spam(self):
         self.is_spam = True
     
 inbox = []
-
+# method to add email to inbox
 class Inbox:
-    # @staticmethod
+    @staticmethod # Refrenece Sources
     def add_email(from_address, email_contents):
         inbox.append(Email(from_address, email_contents))
-    
-    # @staticmethod
+    # method to get number of messages in inbox
+    @staticmethod 
     def get_count():
         return len(inbox)
-    
-    # @staticmethod
+    # method to get email contents at a given index
+    # mark the email as read
+    @staticmethod
     def get_email(index):
         email = inbox[index]
         email.mark_as_read()
         return email.email_contents
-    
-    # @staticmethod
+    # method to get list of unread emails
+    @staticmethod
     def get_unread_emails():
         return [email for email in inbox if not email.has_been_read]
-    
-    # @staticmethod
+    # method to get list of spam emails
+    @staticmethod
     def get_spam_emails():
         return [email for email in inbox if email.is_spam]
-    
-    # @staticmethod
+    # method to delete email at a given index
+    @staticmethod
     def delete(index):
         del inbox[index]
 
-
+# Program main 
 user_choice = ""
 
 while user_choice != "quit":
@@ -69,3 +73,8 @@ while user_choice != "quit":
         print("Goodbye")
     else:
         print("Oops - incorrect input")
+
+#Refrenece Sources
+# 1. https://www.geeksforgeeks.org/python-staticmethod/
+# 2. https://stackoverflow.com/questions/23508248/why-do-we-use-staticmethod
+# 3. https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod
