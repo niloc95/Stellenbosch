@@ -1,130 +1,151 @@
 class Email:
-    def __init__(self, from_address, email_contents):
-        self.has_been_read = False
-        self.is_spam = False
-        self.email_contents = email_contents
+    """
+    constructor to initialize variables
+    """
+
+    def __init__(self, email_contents, from_address):
         self.from_address = from_address
+        self.is_spam = False
+        self.has_been_read = False
+        self.email_contents = email_contents
+
+    '''
+    function to mark email as read 
+    '''
 
     def mark_as_read(self):
         self.has_been_read = True
 
+    '''
+    function to mark email as spam 
+    '''
+
     def mark_as_spam(self):
         self.is_spam = True
 
+
 inbox = []
 
-class EmailStore:
-    @staticmethod
-    def add_email(from_address, email_contents):
-        email = Email(from_address, email_contents)
-        inbox.append(email)
+'''
+function to add email with message 
+'''
 
-    @staticmethod
-    def get_count():
-        return len(inbox)
 
-    @staticmethod
-    def get_email(i):
-        email = inbox[i]
+def add_email(contents, email_address):
+    email = Email(contents, email_address)
+    inbox.append(email)
+
+
+'''
+method provides the count of emails within inbox
+'''
+
+
+def get_count():
+    return len(inbox)
+
+
+'''
+method provides the email present the specified index
+'''
+
+
+def get_email(index):
+    if 0 <= index < len(inbox):
+        email = inbox[index]
         email.mark_as_read()
-        return email.email_contents
-
-    @staticmethod
-    def get_unread_emails():
-        return [email for email in inbox if not email.has_been_read]
-
-    @staticmethod
-    def get_spam_emails():
-        return [email for email in inbox if email.is_spam]
-
-    @staticmethod
-    def delete(i):
-        del inbox[i]
-
-while True:
-    user_input = input("What would you like to do - send/read/quit? ")
-    if user_input == "send":
-        from_address = input("Enter sender's email address: ")
-        email_contents = input("Enter email contents: ")
-        EmailStore.add_email(from_address, email_contents)
-        print("Email sent!")
-    elif user_input == "read":
-        if EmailStore.get_count() == 0:
-            print("You have no emails!")
-        else:
-            for i in range(EmailStore.get_count()):
-                email_contents = EmailStore.get_email(i)
-                print(f"From: {inbox[i].from_address}\n{email_contents}\n")
-    elif user_input == "quit":
-        break
+        print(email)
+        return email
     else:
-        print("Invalid input. Please enter 'send', 'read', or 'quit'.")
+        print('Invalid index, email does not exist')
 
 
+'''
+method provides all unread emails
+'''
 
-# class Email:
-#     # constructor to initialise variables
-#     def __init__(self, from_address, email_contents):
-#         self.has_been_read = False
-#         self.email_contents = email_contents
-#         self.is_spam = False
-#         self.from_address = from_address
 
-#     # method to mark email as read
-#     def mark_as_read(self):
-#         self.has_been_read = True
+def get_unread_emails():
+    unread_list = []
+    for i in inbox:
+        if not i.has_been_read:
+            unread_list.append(i)
+    return unread_list
 
-#     # method to mark email as spam
-#     def mark_as_spam(self):
-#         self.is_spam = True
 
-# inbox = []
+'''
+method provides all spam mails
+'''
 
-# class Inbox:
-#     # method to add email to inbox
-#     def add_email(self, from_address, email_contents):
-#         email = Email(from_address, email_contents)
-#         inbox.append(email)
 
-#     # method to get number of messages in inbox
-#     def get_count(self):
-#         return len(inbox)
+def get_spam_emails():
+    spam_list = []
+    for i in inbox:
+        if i.is_spam:
+            spam_list.append(i)
+            print(f"spam: {i.email_contents}")
+    return spam_list
 
-#     # method to get email contents at a given index
-#     # mark the email as read
-#     def get_email(self, i):
-#         email = inbox[i]
-#         email.mark_as_read()
-#         return email.email_contents
 
-#     # method to get list of unread emails
-#     def get_unread_emails(self):
-#         unread_emails = []
-#         for email in inbox:
-#             if not email.has_been_read:
-#                 unread_emails.append(email)
-#         return unread_emails
+'''
+method add the specified index email as spam
+'''
 
-#     # method to get list of spam emails
-#     def get_spam_emails(self):
-#         spam_emails = []
-#         for email in inbox:
-#             if email.is_spam:
-#                 spam_emails.append(email)
-#         return spam_emails
 
-#     # method to delete email at a given index
-#     def delete(self, i):
-#         del inbox[i]
+def add_spam(index):
+    messages = inbox[index]
+    messages.mark_as_spam()
+    print("Email added to spam")
 
-# # create instance of Inbox class
-# my_inbox = Inbox()
 
-# # sample usage
-# my_inbox.add_email("example@domain.com", "Hello World!")
-# my_inbox.add_email("spam@domain.com", "Get rich quick!")
-# my_inbox.get_count()  # returns 2
-# my_inbox.get_email(0)  # returns "Hello World!"
-# my_inbox.get_unread_emails()  # returns [Email("spam@domain.com")]
-# my_inbox.get_spam_emails()  # returns [Email("spam@domain.com")]
-# my_inbox.delete(0)
+'''
+method deletes the email from inbox
+'''
+
+
+def delete():
+    if len(inbox) > 0:
+        return inbox.pop()
+    else:
+        print('Error, could not delete email')
+
+
+# prepopulated emails with message
+init_emails = [
+    'Hello how are you,xyzatyahoo.in',
+    'Hey! lets meet this weekend,timberleyatgmail.com'
+]
+
+for i in init_emails:
+    message, email = i.split(',')
+    add_email(message, email)
+
+user_choice = ""
+
+while user_choice != "quit":
+    user_choice = input("What would you like to do - read/mark spam/send/quit?")
+    if user_choice == "read":  # read email
+        print("List of unread email\n")
+        for i, mail in enumerate(init_emails):
+            print(f'{i + 1}. {mail}')
+        num = int(input("\nEnter number of email you want to read: "))
+        get_email(num - 1)
+
+    elif user_choice == "mark spam":  # spam mail marking option
+        print("List of emails\n")
+        for i, mail in enumerate(init_emails):
+            print(f'{i}. {mail}')
+        num = int(input("\nEnter number of email you want to spam :"))
+        add_spam(num - 1)
+        get_spam_emails()
+
+    elif user_choice == "send":  # mail sending option
+        from_address = input("Enter your email address: ")
+        email_contents = input("Enter email content: ")
+        add_email(email_contents, from_address)
+        print("Email sent successfully!")
+
+    elif user_choice == "quit":  # quit option
+        print("Goodbye")
+    else:
+        print("Oops - incorrect input")
