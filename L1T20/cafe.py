@@ -1,20 +1,30 @@
+import copy
 #printing a welcome note 
-print("\nWelcome to my interpretation of SEL1T19 Compulsory Task1 'cafe.py' \n")
-
+print("\nWelcome to my interpretation of SEL1T20 Compulsory Task1 'cafe.py' \n")
+#list menu items
 menu = ['Starters', 'Mains', 'Deserts', 'Drinks']
-stock = {'Starters': ['Snails', 'Veg_bread', 'Garlic_Bread', 'Sliced_Potatoes'],
-         'Mains': ['Chicken', 'Fish', 'Pork', 'Lamb'],
-         'Deserts': ['Ice Cream', 'Cheese Cake', ],
-         'Drinks': ['Soft Drinks', 'Craft Beer', 'Wine', 'Hot Drink'],
+# Dictionary items
+stock = {'Starters': 4,
+         'Mains': 4,
+         'Deserts': 2,
+         'Drinks': 8,
+         }
+# dictionary prices for menu items
+price = {'Starters': 45,
+         'Mains': 34,
+         'Deserts': 20,
+         'Drinks': 9,
          }
 
-print(stock_dic['Food'])
+#init variable total stock = 0
+total_stock = 0
 
+# loop to add the total stock on hand
+for item in menu:
+    qty = stock[item]
+    total_cost = price[item]
 
+    total_stock = total_stock + qty * total_cost
 
-for i in menu_list:
-    if i == 'Coffee':
-        print(i)
-
-
-             
+# print totals
+    print('Total stock we holding: R', total_stock )

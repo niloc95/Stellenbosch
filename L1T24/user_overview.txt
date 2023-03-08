@@ -1,0 +1,18 @@
+                  User Overview:                  
+    Total number of users registered:                     2
+    Total number of tasks recorder:                       5
+
+    Admin
+            Admin has been assigned 2 tasks.
+            This represents 40.0% of all tasks.
+            Admin has completed 0.0% of their tasks.
+            Admin must still complete 100.0% of their tasks.
+            100.0% of Admin's tasks are incomplete and now overdue.
+        
+    Nilo
+            Nilo has been assigned 3 tasks.
+            This represents 60.0% of all tasks.
+            Nilo has completed 0.0% of their tasks.
+            Nilo must still complete 100.0% of their tasks.
+            100.0% of Nilo's tasks are incomplete and now overdue.
+        
