@@ -1,0 +1,33 @@
+Question:
+1.1: A system to control anti-lock braking in a car?
+Answer:
+For the system to control anti-lock braking in a car, I would suggest using the Waterfall Model. This model is suitable for projects with well-defined requirements and a clear understanding of the end product, which is important for safety-critical systems such as anti-lock braking in a car.
+
+Question:
+1.2: A virtual reality system to support software maintenance
+Answer: 
+For the virtual reality system to support software maintenance, I would suggest using the Incremental Development Model. This model is suitable for projects where the requirements are not well-defined, and it allows for incremental development and testing of the system, which is ideal for a system like this where there may be a need for ongoing updates and improvements.
+
+Question: 
+1.3: A university accounting system that replaces an existing system? 
+Answer:	
+For the university accounting system that replaces an existing system, I would suggest using the Reuse-Oriented Software Engineering Model. This model focuses on the reuse of existing software components, which is ideal for a project like this where there may be existing software components that can be reused to save time and reduce costs.
+
+Question: 
+1.4: An interactive travel planning system that helps users plan journeys with the lowest environmental impact
+Answer: 
+For the interactive travel planning system that helps users plan journeys with the lowest environmental impact, I would suggest using the Incremental Development Model. This model is suitable for projects where there is a need for ongoing updates and improvements, which is important for a system like this where there may be new information and data available that can be used to improve the system's functionality over time.
+
+Question:
+2: Why do you think incremental development is the most effective approach for developing business software systems and less appropriate for real-time systems engineering?
+Answer: 
+Incremental development vs. real-time systems engineering: Incremental development is most effective for developing business software systems because business systems tend to have changing requirements and need to be constantly updated to meet the evolving needs of the organization. Incremental development allows for a flexible and iterative approach that allows developers to make changes as needed. Real-time systems engineering, on the other hand, requires a more rigid and predictable approach because of the critical nature of the systems being developed. Real-time systems are designed to operate in a specific way and cannot be easily modified, making incremental development less appropriate.
+
+Question:
+3: Look at the diagram showing reuse-oriented software engineering above. Why do you think it is necessary to have two separate requirements
+engineering activities in this process?
+
+Answer:
+To identify the reusable components: The second requirements engineering activity involves identifying the reusable components that can be used in the new system. This is necessary to identify the existing software components that can be used to build the new system and reduce the amount of new development work that needs to be done. The requirements for the reusable components may be different from the requirements of the new system, and therefore require a separate requirements engineering activity.
+
+By separating these two requirements engineering activities, the development team can focus on the requirements of each component separately and ensure that both the new system and the reusable components meet their respective requirements. This can help improve the quality of the software and reduce the time and cost of development.

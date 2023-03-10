@@ -1,0 +1,34 @@
+Question: 
+1: Reread “Agile Manifesto”. Can you think of a situation in which one or more of the four “values” could get a software team into trouble?
+
+Answer: 
+Individuals and interactions over processes and tools: While prioritizing individuals and interactions over processes and tools can lead to a more flexible and adaptable team, it could also result in a lack of structure or consistency in the development process. This could make it difficult to track progress, manage resources, and ensure that the team is working effectively towards project goals.
+Working software over comprehensive documentation: Prioritizing working software over comprehensive documentation can be beneficial in terms of speed and efficiency, but it could also lead to a lack of clarity or documentation that can cause problems down the line. For example, if the team relies solely on code to communicate the functionality of the software, it may be difficult for others to understand or modify the code later on.
+Customer collaboration over contract negotiation: While customer collaboration is important for ensuring that the software meets the needs of its users, it could also lead to scope creep or changes in requirements that are not properly managed. This could result in delays, cost overruns, or even a failure to meet the original project goals.
+Responding to change over following a plan: While responding to change is important in a rapidly changing environment, it could also lead to a lack of direction or focus in the development process. If the team is constantly changing course to address new issues or opportunities, they may lose sight of the original project goals or fail to properly prioritize tasks.
+
+Question: 
+2:Describe agility in your own words
+Answer:
+Agility refers to the ability of a system or process to quickly and efficiently adapt to changing circumstances or requirements. In software development, agility involves the ability of a development team to respond quickly to changing customer needs, market conditions, or technical constraints by adjusting their development process, tools, or methodologies. This includes a willingness to embrace change, experiment with new approaches, and continuously learn and improve. An agile development team values collaboration, communication, and transparency, and seeks to deliver value to the customer in the shortest possible time frame while maintaining high quality standards. Agility is not just a set of practices or tools, but a mindset that emphasizes flexibility, adaptability, and responsiveness.
+
+Question: 
+3.: Why do you think requirements change so much? software development
+Answer:
+Evolving customer needs: Customer needs and expectations can change over time, and it is important for software development teams to be able to respond to these changes in order to deliver software that meets their needs. This could be due to changing market conditions, new competition, or changes in technology.
+
+Ambiguity or incompleteness in initial requirements: Requirements are often not fully specified or clearly defined at the beginning of a project, which can lead to changes as the team gains a better understanding of the problem domain or discovers new requirements during the development process.
+
+Miscommunication: Miscommunication between stakeholders, developers, and other team members can result in misunderstandings or inconsistencies in requirements, which may only become apparent later in the development process.
+
+Technical constraints: Technical constraints such as limitations in hardware or software can also lead to changes in requirements as the team discovers new limitations or challenges in the development process.
+
+External factors: External factors such as changes in regulations or laws, economic conditions, or political events can also lead to changes in requirements as software needs to adapt to new circumstances.
+
+It is important for software development teams to be prepared for changing requirements by adopting agile methodologies that prioritize flexibility, communication, and continuous feedback. This can help ensure that the team is able to adapt quickly and efficiently to changing requirements and deliver software that meets the needs of its users.
+
+Question 4
+4.:
+
+Answer:
+In summary, test-first development can help programmers develop a better understanding of the system requirements by clarifying requirements, identifying edge cases, encouraging collaboration, and enforcing design patterns. This can lead to code that is more robust, maintainable, and extensible, and that better meets the needs of its users.
