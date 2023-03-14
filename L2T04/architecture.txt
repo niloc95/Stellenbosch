@@ -1,0 +1,25 @@
+Question 1
+
+REPOSITORY ARCHITECTURE
+The Repository architecture pattern is commonly used to abstract the storage, retrieval, and querying of data in a system. It provides a central location for data storage and retrieval, which simplifies data management and allows for more modular and extensible code. Some examples of when the Repository pattern would be most appropriate to use include:
+An e-commerce website: In an e-commerce website, there is typically a lot of data that needs to be stored and retrieved, such as product information, customer data, and order history. By using a Repository pattern, the data can be managed more efficiently and in a centralized location, which makes it easier to maintain and extend the website's functionality over time.
+
+A financial trading platform: In a financial trading platform, there is a lot of data that needs to be stored and retrieved in real-time, such as market data, trade history, and user account information. By using a Repository pattern, the system can handle the large volume of data more efficiently and in a scalable way, which is critical for the success of the platform.
+
+CLIENT-SERVER ARCHITECTURE
+The Client-Server architecture pattern is commonly used to divide a system into two parts: the client (user interface) and the server (back-end logic and data storage). It allows for better separation of concerns and scalability, as multiple clients can access the same server. Some examples of when the Client-Server pattern would be most appropriate to use include:
+A social media platform: In a social media platform, there are typically many users accessing the platform at the same time, and each user needs to be able to interact with the platform independently. By using a Client-Server pattern, the platform can handle the large volume of user requests more efficiently and in a scalable way, as the server can be designed to handle multiple requests simultaneously.
+
+An online multiplayer game: In an online multiplayer game, there are typically many players accessing the game at the same time, and each player needs to be able to interact with the game independently. By using a Client-Server pattern, the game can handle the large volume of player requests more efficiently and in a scalable way, as the server can be designed to handle multiple player interactions simultaneously.
+
+PIPE AND FILTER ARCHITECTURE
+The Pipe and Filter architecture pattern is commonly used to process data in a system by breaking it down into smaller parts and passing it through a series of filters. It allows for better separation of concerns and flexibility, as filters can be added or removed without affecting the rest of the system. Some examples of when the Pipe and Filter pattern would be most appropriate to use include:
+A data processing system: In a data processing system, there is typically a large amount of data that needs to be processed in different ways, such as filtering, sorting, and transforming. By using a Pipe and Filter pattern, the data can be processed in a modular and flexible way, as filters can be added or removed as needed to handle different types of data.
+
+A video editing software: In a video editing software, there are typically many different filters and effects that can be applied to a video, such as color correction, brightness adjustment, and special effects. By using a Pipe and Filter pattern, the video data can be processed in a modular and flexible way, as filters can be added or removed as needed to achieve the desired effects.
+
+Question 2
+
+1. Layered Architecture + Repository Pattern: This combination is often used in enterprise-level software systems. Layered architecture involves separating the system into different layers, where each layer performs a specific set of functions. The Repository pattern is used to provide a separation between the application and the database. Combining these two patterns allows for a highly modular and scalable system, where changes to one layer do not affect the other layers. This architecture is often used in systems where security, scalability, and maintainability are critical, such as banking systems or healthcare systems.
+
+2. Client-Server Architecture + Pipe and Filter Architecture: This combination is often used in web applications that require real-time data processing. Client-Server architecture involves separating the system into two parts, the client and the server, where the client sends requests to the server and the server processes those requests and sends back responses. The Pipe and Filter architecture involves separating the data processing into a series of filters that are connected through pipes, where each filter performs a specific task. Combining these two patterns allows for real-time data processing, where the server can process requests using a series of filters and send back responses to the client. This architecture is often used in systems that require real-time data processing, such as trading systems or real-time monitoring systems.

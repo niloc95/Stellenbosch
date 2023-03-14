@@ -1,0 +1,25 @@
+http://www.pnwx.com/
+The website has a simple and straightforward UI, which makes it easy to navigate. However, there are some issues with the design and layout that could be improved upon. Some good and bad elements of the website's UI are:
+
+Good elements:
+The website has a clear and consistent layout, with the same header and footer on all pages.
+The navigation menu is located at the top of the page and provides easy access to all the main sections of the website.
+The website uses a limited color palette, which helps to create a cohesive design.
+
+Bad elements:
+The website has a dated and cluttered appearance, with a lot of information and images on the homepage.
+The use of multiple font sizes and styles can make the text difficult to read and create a messy look.
+The website lacks visual hierarchy, which can make it difficult for users to find the information they are looking for.
+
+https://www.ucook.co.za/
+The website has a modern and visually appealing UI, which is designed to showcase the products and services offered by the company. Some good and bad elements of the website's UI are:
+
+Good elements:
+The website has a clean and minimalist design, which makes it easy to navigate and use.
+The use of high-quality images and large headings creates a visually engaging interface.
+The website's color scheme is consistent and on-brand, helping to reinforce the company's identity.
+The website's navigation menu is located at the top of the page and provides easy access to all the main sections of the website.
+
+Bad elements:
+The website has a lot of content on the homepage, which can make it overwhelming for users.
+The website lacks some important accessibility features, such as alt text for images, which can make it difficult for visually impaired users to navigate.

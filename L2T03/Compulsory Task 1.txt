@@ -1,0 +1,23 @@
+Ambiguities or omissions in the statement of requirements for this part of a ticket-issuing system may include:
+ 1. It is not clear how the user selects the destination. Is there a touch screen, a keyboard, or some other interface?
+ 2. It is not clear what happens if the credit card is invalid. Is the user prompted to enter another card or is the transaction canceled?
+ 3. It is not clear what happens if the personal identification number is incorrect. Is the transaction canceled or is the user prompted to enter it again?
+ 4. It is not clear whether there is a limit to the number of destinations that can be displayed on the menu. How many destinations will be displayed? Will the list be scrollable?
+5. It is not clear whether the system will print a physical ticket or if it will issue an electronic ticket.
+6. It is not clear whether the system will provide any feedback to the user during the transaction, such as an estimated time for completion or a progress bar.
+
+Based on the above ambiguities and omissions, the following non-functional requirements for the ticket-issuing system can be defined:
+The system shall provide a clear and intuitive interface for users to select their destination.
+The system shall provide clear and helpful error messages when the credit card is invalid or the personal identification number is incorrect.
+The system shall be able to handle a large number of destinations on the menu and provide an easy-to-use mechanism for scrolling through the list.
+The system shall print a physical ticket that clearly displays the destination, date, and any other relevant information.
+The system shall provide feedback to the user during the transaction to indicate progress and estimated time for completion.
+The system shall have a high level of security to protect user credit card information and personal identification numbers.
+The system shall be available 24/7 to allow users to purchase tickets at any time.
+The system shall be able to handle a large number of simultaneous transactions to avoid delays or errors.
+The system shall be reliable and have a low error rate, to ensure that users can purchase tickets quickly and easily.
+
+Assumptions:
+The system will be designed to accept all major credit cards.
+The personal identification number will be a four-digit number that the user creates when they first use the system.
+The system will be installed at train stations and will be available for use by anyone, regardless of their technical expertise.

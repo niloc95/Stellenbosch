@@ -11,6 +11,8 @@ def get_input():
             op = input("Enter operator (+, -, *, /): ")
             if op not in ops:
                 raise ValueError("Invalid operator")
+            if op == '/' and num2 == 0:
+                raise ZeroDivisionError("Cannot divide by zero")
             return num1, num2, op
         except ValueError as e:
             print("Error:", e)
