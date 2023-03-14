@@ -1,0 +1,49 @@
+# SE L2T14
+
+Web 3.0, also known as the Semantic Web, is the next stage in the evolution of the internet. Unlike its predecessors, Web 1.0 and Web 2.0, Web 3.0 is designed to be more intelligent, personalized, and intuitive.
+
+Web 1.0, which began in the early 1990s, was characterized by static websites that provided limited information and had minimal interactivity. Web 1.0 was essentially a one-way street, with users consuming information but not contributing to it.
+
+Web 2.0, which emerged in the early 2000s, marked a major shift in the way people used the internet. Web 2.0 was characterized by user-generated content, social networking, and online collaboration. Websites like Wikipedia, Facebook, and YouTube are examples of Web 2.0 platforms.
+
+Web 3.0 builds on the innovations of Web 2.0 by adding more intelligence and personalization to the mix. With Web 3.0, the internet will be able to understand and interpret human language, making it easier for people to find and consume information. Web 3.0 will also allow for more personalized experiences, as websites will be able to use data to deliver content that is tailored to the individual user.
+
+One of the key technologies driving Web 3.0 is the blockchain, a decentralized ledger that allows for secure and transparent transactions without the need for intermediaries. The blockchain is the backbone of cryptocurrencies like Bitcoin and Ethereum, but it can also be used for a wide range of other applications, from supply chain management to voting systems.
+
+Overall, Web 3.0 promises to be a more intelligent, decentralized, and secure version of the internet, one that is better equipped to meet the needs of a rapidly changing world.
+
+1. The front-end and back-end of a web application are two separate but interconnected parts that work together to provide a complete user experience.
+    
+    The front-end, also known as the client-side, is the part of the application that the user interacts with directly. This includes the user interface (UI), which is the visual representation of the application, and the user experience (UX), which encompasses how the user interacts with the UI. The front-end is responsible for rendering the content and presenting it to the user in a way that is visually appealing and easy to understand. Front-end technologies include HTML, CSS, and JavaScript.
+    
+    The back-end, also known as the server-side, is the part of the application that handles the processing and storage of data. It is responsible for retrieving and manipulating data from databases, processing user input, and handling business logic. The back-end is also responsible for generating the dynamic content that is presented to the user on the front-end. Back-end technologies include programming languages like Java, Python, and Ruby, as well as frameworks like Node.js and Django.
+    
+    In summary, the functional differences between the front-end and back-end of a web application are as follows:
+    
+    Front-end:
+    
+    - User interface design
+    - User experience design
+    - Rendering content
+    - Client-side processing
+    - Front-end technologies (HTML, CSS, JavaScript)
+    
+    Back-end:
+    
+    - Data storage and retrieval
+    - Data processing
+    - Business logic
+    - Server-side processing
+    - Generating dynamic content
+    - Back-end technologies (Java, Python, Ruby, Node.js, Django)
+
+1. The browser checks its cache to see if it has a stored version of the requested page. If it does, it displays the cached version, saving time and resources.
+2. If the page is not cached, the browser sends a request to the Domain Name System (DNS) server to translate the domain name into an IP address.
+3. Once the IP address is obtained, the browser establishes a connection to the server hosting the website using the Hypertext Transfer Protocol (HTTP) or the more secure HTTPS protocol.
+4. The server then receives the request and retrieves the requested page and any associated assets such as images, scripts, and stylesheets.
+5. The server sends the requested page and assets back to the browser using the HTTP or HTTPS protocol.
+6. The browser then begins to render the HTML code of the page and downloads any external assets such as images, scripts, and stylesheets.
+7. As the page is rendered, the browser executes any JavaScript code included in the page.
+8. Finally, the fully rendered page is displayed in the browser window for the user to view.
+
+Overall, the process of loading a web page involves multiple steps, including domain name resolution, establishing a connection to the server, downloading and rendering the page, and executing any associated code.
