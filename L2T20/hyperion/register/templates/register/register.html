@@ -1,0 +1,41 @@
+{% load static %}
+
+{%load crispy_forms_tags%}
+
+<!-- Include Bootstrap CSS -->
+ <link rel="stylesheet" type="text/css" href="{% static '/home/css/bootstrap.min.css' %}"> 
+
+{% block content %}
+  <div class="container col-md-6 bg-light">
+    <div class="row my-5">
+      <div class="col-md-12">
+        <h1 class="text-center mb-12">Welcome to the online voter registration Service</h1>
+        <div class="row my-5">
+            <h4 class="text-left mb-12">Register</h4>
+        </div>
+        <form method="POST" class="form">
+          {% csrf_token %}
+          {{ form|crispy}}
+          <p>Have a Account Login <a href='/login'>here</a></p>
+          <button type="submit" class="btn btn-success">Register</button>
+          
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="{% static '/home/js/bootstrap.min.js' %}"></script>
+{% endblock %}
+
+{% comment %} 
+
+{%block title%}Create Account {%endblock%}
+
+{%block content %}
+    <form method ='POST' class='form-group'>
+        {% csrf_token %}
+        {{form}}
+        <button type='submit' class="btn btn-success">Register</button>
+{%endblock%} {% endcomment %}

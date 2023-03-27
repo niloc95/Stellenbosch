@@ -1,0 +1,33 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" type="text/css" href="{% static '/home/css/bootstrap.min.css' %}"> 
+{% comment %} {% block content %}
+<form method = 'POST' class='from-group'>
+    {% csrf_token %}
+    {{ form|crispy}}
+    <button type="submit" class=" btn btn-success">Login</button>
+    <p>To vote you need an account Click here to <a href='/register'>Register</a></p>
+</form> 
+{% endblock %} {% endcomment %}
+
+{% block content %}
+  <div class="container col-md-6 bg-light">
+    <div class="row my-5">
+      <div class="col-md-12">
+        <h1 class="text-center mb-12 ">Welcome to the online voter registration Service</h1>
+        <div class="row my-5">
+            <h4 class="text-left mb-12">Login</h4>
+        </div>
+        <form method = 'POST' class='from-group mt-3'>
+            {% csrf_token %}
+            {{ form|crispy}}
+            <p>To vote you need an account Click here to <a href='/register'>Register</a></p>
+            <button type="submit" class=" btn btn-success">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="{% static '/home/js/bootstrap.min.js' %}"></script>
+{% endblock %}
