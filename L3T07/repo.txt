@@ -1,0 +1,2 @@
+https://github.com/niloc95/Django_Bootstrap_Website/pulls?q=is%3Apr+is%3Aclosed
+
