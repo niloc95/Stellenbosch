@@ -21,15 +21,15 @@ print ("Example 1: ")
 
 grade = 66
 if grade >= 80:
-print ("Congratulations! You have an A")
+    print ("Congratulations! You have an A")
 elif grade >= 70:
-print ("Good job! You have a B")
+    print ("Good job! You have a B")
 elif grade >= 60:
-print ("Keep it up! You have a C")
+    print ("Keep it up! You have a C")
 elif grade >= 50:
-print ("Try a little harder next time! You have a D")
+    print ("Try a little harder next time! You have a D")
 else:
-print ("Oh No! You have an F")
+    print ("Oh No! You have an F")
 
 # Run this program to see what prints out, then try changing the value of the grade variable and running it again.
 
@@ -37,11 +37,11 @@ print ("Oh No! You have an F")
 print ("Example 2: ")
 
 if len("Hello World") > 6:
-print("This sentence is long!")
+    print("This sentence is long!")
 elif len("Hello World") > 3:
-print("Slightly more manageable!")
+    print("Slightly more manageable!")
 else:
-print("Easy stuff")
+    print("Easy stuff")
         
 # ****************** END OF EXAMPLE CODE ********************* # 
 

@@ -1,0 +1,40 @@
+
+{
+    "book1": {
+       "title": "To Kill a Mockingbird",
+       "author": "Harper Lee",
+       "year": 1960,
+       "publisher": "J. B. Lippincott & Co."
+    },
+    "book2": {
+       "title": "1984",
+       "author": "George Orwell",
+       "year": 1949,
+       "publisher": "Secker & Warburg"
+    },
+    "book3": {
+       "title": "The Catcher in the Rye",
+       "author": "J. D. Salinger",
+       "year": 1951,
+       "publisher": "Little, Brown and Company"
+    },
+    "book4": {
+       "title": "One Hundred Years of Solitude",
+       "author": "Gabriel García Márquez",
+       "year": 1967,
+       "publisher": "Harper & Row"
+    },
+    "book5": {
+       "title": "Pride and Prejudice",
+       "author": "Jane Austen",
+       "year": 1813,
+       "publisher": "T. Egerton, Whitehall"
+    },
+    "book6": {
+       "title": "The Great Gatsby",
+       "author": "F. Scott Fitzgerald",
+       "year": 1925,
+       "publisher": "Charles Scribner's Sons"
+    }
+ }
+ 
