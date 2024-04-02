@@ -1,11 +1,10 @@
-# Bond Calculator
+# A Python Bond Calculator
 
-* @Website     Python - Frontend Software Engineering  
-* @framework   None
-* @author      Nilo Cara 
-* @copyright   Copyright (c) 2023, Nilo Cara
-* @link        https://niloc95.github.io/niloc95
-* @since       v1.0
+* Python
+* @author: Nilo Cara 
+* @copyright:   Copyright (c) 2023, Nilo Cara
+* @link:   https://niloc95.github.io/niloc95
+* @since:  v1.0
 * Website: https://frontend.co.za
 * Website: https://about.frontend.co.za
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
