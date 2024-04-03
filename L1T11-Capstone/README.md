@@ -6,7 +6,6 @@
 * @link:   https://niloc95.github.io/niloc95
 * @since:  v1.0
 * Website: https://frontend.co.za
-* Website: https://about.frontend.co.za
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
